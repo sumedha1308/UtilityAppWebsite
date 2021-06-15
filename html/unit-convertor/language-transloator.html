@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utility Apps</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/images/icons8-calculator-24.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="/js/language-translator.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <img src="../../images/icons8-calculator-96.png">
+            <li class="logo"><a href="../../index.html"><h2>Utility Apps</h2></a></li>
+            <li class="item has-submenu">
+                <a tabindex="0">Encoder-Decoder</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="/html/encoder-decoder/url-encoder-decoder.html">Encode-Decode-Url</a></li>
+                    <li class="subitem"><a href="/html/encoder-decoder/base-64-ecoder-decoder.html">Base 64 Encoder-Decoder</a></li>
+                    <li class="subitem"><a href="/html/encoder-decoder/hash-generator.html">Hash-Generator</a></li>
+                </ul>
+            </li>
+            <li class="item has-submenu">
+                <a tabindex="0">RGB-HEX-Convertor</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="/html/rgb-hex-convertor/rgb-to-hex.html">RGB-HEX-Convertor</a></li>
+                    <li class="subitem"><a href="/html/rgb-hex-convertor/hex-to-rgb.html">HEX-RGB-Convertor</a></li>
+                </ul>
+            </li>
+            <li class="item has-submenu">
+                <a tabindex="0">Time Stamp Convertor</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="/html/timestamp-convertor/humanDate-Epoc-timestamp.html">TimeStamp-HumanDate</a></li>
+                    <li class="subitem"><a href="/html/timestamp-convertor/stopwatch.html">StopWatch & Timer & IP Finder</a></li>
+                </ul>
+            </li>
+            <li class="item has-submenu">
+                <a tabindex="0">Unit Convertor & Others</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="/html/unit-convertor/length-convertor.html">Length Convertor</a></li>
+                    <li class="subitem"><a href="/html/unit-convertor/Temperature-convertor.html">Temperature Convertor</a></li>
+                    <li class="subitem"><a href="/html/unit-convertor/language-transloator.html">Language Translator</a></li>
+                </ul>
+            </li>
+            <li class="item"><a href="/html/number-base-convertor/number-base-convertor.html">Number Base Convertor</a></li>
+            <li class="item"><a href="/html/string-utilities/string-utilities.html">String Utilities</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars hamburger" ></i></a></i></li>
+        </ul>
+    </nav>
+    <div class="below-navbar">
+        <div class="page-heading">Language Translator</div>
+        <div class="page-summary">
+            <p class="class-main-margin">This tool translate languages using API https://api.mymemory.translated.net/get?q=${textInput.value}&langpair=${inputDropDownValue}|${outputDropDownValue}</p>
+            <p class="class-main-margin">Langauge can be translated "FROM" section and result will be displayed in "To" section as per selection of langauge in the dropdownlist.</p>
+        </div>
+        <form>
+           <div class="fromInput">
+                <label for="from">From: </label>
+                <input type="text" id="inputUnit" placeholder="From">
+                <div class="unit-dropdown">
+                        <select id="input-unit-convertor" name="unit-convertor">
+                            <!-- <option value="select" id="select--">Select --</option> -->
+                            <option selected value="en" id="input-en">English</option>
+                            <option value="hi" id="input-hindi">Hindi</option>
+                            <option value="it" id="input-italy">Italian</option>
+                            <option value="ja" id="input-japan">Japanese</option>
+                            <option value="ko" id="input-koria">Korean</option>
+                            <option value="la" id="input-latin">Latin</option>
+                            <option value="ne" id="input-nepal">Nepali</option>
+                            <option value="pa" id="input-punjab">Punjabi</option>
+                            <option value="pt" id="input-portu">Portuguese</option>
+                            <option value="ru" id="input-russia">Russian</option>
+                            <option value="sv" id="input-swedish">Swedish</option>
+                            <option value="ta" id="input-tamil">Tamil</option>
+                            <option value="te" id="input-telgu">Telgu</option>
+                            <option value="tr" id="input-turkish">Turkish</option>
+                            <option value="ur" id="input-urdu">Urdu</option>
+                        </select>
+                </div>
+            </div> <!--End of from input-->
+            <div class="toOutput">
+                <label for="from">To: </label>
+                <input type="text" id="outputUnit" placeholder="To" readonly="readonly">
+                <div class="unit-dropdown">
+                        <select id="output-unit-convertor" name="unit-convertor">
+                            <!-- <option value="select" id="select--">Select --</option> -->
+                            <option value="en" id="input-en">English</option>
+                            <option value="hi" id="output-hindi">Hindi</option>
+                            <option value="it" id="output-italy">Italian</option>
+                            <option value="ja" id="output-japan">Japanese</option>
+                            <option value="ko" id="output-koria">Korean</option>
+                            <option value="la" id="output-latin">Latin</option>
+                            <option value="ne" id="output-nepal">Nepali</option>
+                            <option value="pa" id="output-punjab">Punjabi</option>
+                            <option value="pt" id="output-portu">Portuguese</option>
+                            <option value="ru" id="output-russia">Russian</option>
+                            <option value="sv" id="output-swedish">Swedish</option>
+                            <option value="ta" id="output-tamil">Tamil</option>
+                            <option value="te" id="output-telgu">Telgu</option>
+                            <option value="tr" id="output-turkish">Turkish</option>
+                            <option value="ur" id="output-urdu">Urdu</option>
+                        </select>
+                </div>
+            </div> <!--End of from input-->
+        </form>
+    </div><!--End of below nav bar-->
+    <script src="/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/b5652605f0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

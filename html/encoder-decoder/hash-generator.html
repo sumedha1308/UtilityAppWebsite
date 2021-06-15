@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utility Apps</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/png" href="/images/icons8-calculator-24.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="/js/hash-generator.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <img src="../../images/icons8-calculator-96.png">
+            <li class="logo"><a href="../../index.html"><h2>Utility Apps</h2></a></li>
+            <li class="item has-submenu">
+                <a tabindex="0">Encoder-Decoder</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="/html/encoder-decoder/url-encoder-decoder.html">Encode-Decode-Url</a></li>
+                    <li class="subitem"><a href="/html/encoder-decoder/base-64-ecoder-decoder.html">Base 64 Encoder-Decoder</a></li>
+                    <li class="subitem"><a href="/html/encoder-decoder/hash-generator.html">Hash-Generator</a></li>
+                </ul>
+            </li>
+            <li class="item has-submenu">
+                <a tabindex="0">RGB-HEX-Convertor</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="/html/rgb-hex-convertor/rgb-to-hex.html">RGB-HEX-Convertor</a></li>
+                    <li class="subitem"><a href="/html/rgb-hex-convertor/hex-to-rgb.html">HEX-RGB-Convertor</a></li>
+                </ul>
+            </li>
+            <li class="item has-submenu">
+                <a tabindex="0">Time Convertor</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="/html/timestamp-convertor/humanDate-Epoc-timestamp.html">HumanDate-Epoc-TimeStamp-Convertor</a></li>
+                    <li class="subitem"><a href="/html/timestamp-convertor/stopwatch.html">StopWatch & Timer & IP Finder</a></li>
+                </ul>
+            </li>
+            <li class="item has-submenu">
+                <a tabindex="0">Unit Convertor & Others</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="/html/unit-convertor/length-convertor.html">Length Convertor</a></li>
+                    <li class="subitem"><a href="/html/unit-convertor/Temperature-convertor.html">Temperature Convertor</a></li>
+                    <li class="subitem"><a href="/html/unit-convertor/language-transloator.html">Language Translator</a></li>
+                </ul>
+            </li>
+            <li class="item"><a href="/html/number-base-convertor/number-base-convertor.html">Number Base Convertor</a></li>
+            <li class="item"><a href="/html/string-utilities/string-utilities.html">String Utilities</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars hamburger" ></i></a></i></li>
+        </ul>
+    </nav>
+    <div class="below-navbar">
+        <div class="page-heading">Hash Generator</div>
+        <div class="page-summary">
+            <p class="class-main-margin">This tool is one stop shop for various hash generations. It supports below hash generations utilities: </p>
+            <ul class="class-main-margin">
+                <li>MD5 Hash Generator : An MD5 hash is created by taking a string of an any length and encoding it into a 128-bit fingerprint.</li>
+                <li>SHA-1 Hash Generator : SHA-1 (Secure Hash Algorithm) is a 160 bit cryptographic hash function created by the NSA in 1995</li>
+                <li>SHA-256 Hash Generator : SHA256 is designed by NSA, it's more reliable than SHA1.</li>
+                <li>SHA-512 Hash Generator : The SHA512 hash can not be decrypted if the text you entered is complicated enough.</li>
+            </ul>
+        </div>
+        <form>
+            <textarea cols="40" rows="5" placeholder="Please enter a string to generate hash" id="input-url"></textarea>
+            <div class="div-dropdown">
+                <select id="dropdown-encode-decode" name="Encoder-Decoder">
+                    <option value="select--" id="select--">Select --</option>
+                    <option value="md5-hash">MD5 Hash Generator</option>
+                    <option value="sha-1-hash">SHA-1 Hash Generator</option>
+                    <option value="sha-256-hash">SHA-256 Hash Generator</option>
+                    <option value="sha-512-hash">SHA-512 Hash Generator</option>
+                </select>
+            </div>
+            <textarea cols="40" rows="5" placeholder="Result here" id="output-url" readonly="readonly"></textarea>
+          </form>
+    </div><!--End of below nav bar-->
+    <script src="/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/b5652605f0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

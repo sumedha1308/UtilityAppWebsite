@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utility Apps</title>
+    <link rel="icon" type="image/png" href="/images/icons8-calculator-24.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="/js/timestamp-convertor.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="menu">
+            <img src="../../images/icons8-calculator-96.png">
+            <li class="logo"><a href="../../index.html"><h2>Utility Apps</h2></a></li>
+            <li class="item has-submenu">
+                <a tabindex="0">Encoder-Decoder</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="/html/encoder-decoder/url-encoder-decoder.html">Encode-Decode-Url</a></li>
+                    <li class="subitem"><a href="/html/encoder-decoder/base-64-ecoder-decoder.html">Base 64 Encoder-Decoder</a></li>
+                    <li class="subitem"><a href="/html/encoder-decoder/hash-generator.html">Hash-Generator</a></li>
+                </ul>
+            </li>
+            <li class="item has-submenu">
+                <a tabindex="0">RGB-HEX-Convertor</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="/html/rgb-hex-convertor/rgb-to-hex.html">RGB-HEX-Convertor</a></li>
+                    <li class="subitem"><a href="/html/rgb-hex-convertor/hex-to-rgb.html">HEX-RGB-Convertor</a></li>
+                </ul>
+            </li>
+            <li class="item has-submenu">
+                <a tabindex="0">Time Convertor</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="/html/timestamp-convertor/humanDate-Epoc-timestamp.html">HumanDate-Epoc-TimeStamp-Convertor</a></li>
+                    <li class="subitem"><a href="/html/timestamp-convertor/stopwatch.html">StopWatch & Timer & IP Finder</a></li>
+                </ul>
+            </li>
+            <li class="item has-submenu">
+                <a tabindex="0">Unit Convertor & Others</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="/html/unit-convertor/length-convertor.html">Length Convertor</a></li>
+                    <li class="subitem"><a href="/html/unit-convertor/Temperature-convertor.html">Temperature Convertor</a></li>
+                    <li class="subitem"><a href="/html/unit-convertor/language-transloator.html">Language Translator</a></li>
+                </ul>
+            </li>
+            <li class="item"><a href="/html/number-base-convertor/number-base-convertor.html">Number Base Convertor</a></li>
+            <li class="item"><a href="/html/string-utilities/string-utilities.html">String Utilities</a></li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars hamburger" ></i></a></i></li>
+        </ul>
+    </nav>
+    <div class="below-navbar">
+        <div class="page-heading">Timestamp Converter</div>
+        <div class="page-summary">
+            <p class="class-main-margin">This tool supports below utility apps</p>
+            <ul class="class-main-margin">
+                <li>Epoc time to Humandate TimeStamp : The Unix epoch (or Unix time or POSIX time or Unix timestamp) is the number of seconds that have elapsed since January 1, 1970 (midnight UTC/GMT), not counting leap seconds (in ISO 8601: 1970-01-01T00:00:00Z). Literally speaking the epoch is Unix time 0 (midnight 1/1/1970), but 'epoch' is often used as a synonym for Unix time. </li>
+                <li>Humandate to Epoc TimeStamp</li>
+            </ul>
+        </div>
+            <section class="section-epoc-to-human"><!--Epoc to HumanDate-->
+                <h3>Epoc time to Humandate TimeStamp Convertor</h3>
+                <div class="epoc-input-output">
+                    <div class="div-input-output-epoc">
+                        <label for="input-epoc">Enter Epoc Time</label>
+                        <input type="number" id="input-epoc" placeholder="Please Enter Epoc time" />
+                    </div>
+                    <div class="epoc-btn-position"><input type="button" id="epoc-btn" value="Epoc-To-HumanDate"></div>
+                    <div class="div-input-output-epoc">
+                        <label for="output-humanDate">HumanDate Time</label>
+                        <input type="text" id="output-human-time" placeholder="Date in Human readable format" readonly="readonly"/>
+                    </div>
+                </div>
+            </section>
+            <section class="section-human-to-epoc"><!--HumanDate to Epoc-->
+                <h3>Humandate to Epoc TimeStamp Convertor</h3>
+                <div>
+                    <div class="human-input"> <!--Should be inline -->
+                        <div class="div-human-input">
+                            <label for="input-human-year">Year</label>
+                            <input type="number" id="input-human-year" placeholder="Year" />
+                        </div>
+                        <div class="div-human-input">
+                            <label for="input-human-month">Month</label>
+                            <input type="number" id="input-human-month" placeholder="Month" min="1" max="12"/>
+                        </div>
+                        <div class="div-human-input">
+                            <label for="input-human-day">Day</label>
+                            <input type="number" id="input-human-day" placeholder="Day" min="1" max="31"/>
+                        </div>
+                        <div class="div-human-input">
+                            <label for="input-human-hour">Hour</label>
+                            <input type="number" id="input-human-hour" placeholder="Hour" min="0" max="24" />
+                        </div>
+                        <div class="div-human-input">
+                            <label for="input-human-minute">Minutes</label>
+                            <input type="number" id="input-human-minute" placeholder="Day" min="0" max="59" />
+                        </div>
+                        <div class="div-human-input">
+                            <label for="input-human-sec">Sec</label>
+                            <input type="number" id="input-human-sec" placeholder="Seconds" min="0" max="59" />
+                        </div>
+                        <div class="epoc-btn-position"><input type="button" id="human-btn" value="HumanDate-To-Epoc"></div>
+                    </div><!--End of human input-->
+                    <div class="human-output">
+                        
+                        <div class="div-human-output">
+                            <label for="output-humanDate">Epoc TimeStamp</label>
+                            <input type="text" id="output-epoc-time" placeholder="Epoc timestamp" readonly="readonly"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+    </div><!--End of below nav bar-->
+    <script src="/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/b5652605f0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,617 @@
+* {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  
+  body,
+  .input-output-group,
+  .below-navbar {
+    background-color: #d6ffff;
+    background-image: url(/images/convertor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  body {
+    font-family: sans-serif;
+    font-size: 1em;
+  }
+  
+  nav {
+    background:blue;
+    padding: 0 15px;
+    font-size: 1.5em;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu,
+  .submenu {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .div-tagline{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 3rem;
+    font-style: italic;
+    color: blue;
+  }
+  
+  .item {
+    padding: 10px;
+  }
+  
+  .item a:hover {
+    color: black;
+  }
+  
+  /* Mobile menu */
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu li a {
+    display: block;
+    padding: 5%;
+  }
+  
+  .menu li.subitem a {
+    padding: 10px;
+  }
+  
+  .toggle {
+    order: 1;
+    font-size: 2em;
+  }
+  
+  .item {
+    order: 2;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+  
+  .active .item {
+    display: block;
+  }
+  
+  .submenu {
+    display: none;
+  }
+  
+  .submenu-active .submenu {
+    display: block;
+    background:lightskyblue;
+  }
+  
+  
+  .has-submenu i {
+    font-size: 12px;
+  }
+  
+  .has-submenu > a::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 13px;
+  
+    line-height: 8%; 
+    font-weight: 900;
+    content: "\f078";
+    color: white;
+    padding-left: 5%;
+  }
+
+  .subitem a {
+    padding: 10%;
+  }
+  
+  .submenu-active {
+    background-color:blue;
+    border-radius: 2px;
+  }
+  .box {
+    border: solid;
+    height: 2rem;
+    width: 5rem;
+    margin: auto;    
+}
+.page-heading{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: justify;
+  font-size: 3em ;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.page-summary{
+  margin-top: 5%;
+  /* width:80%; */
+  margin-left: 5%;
+  margin-right: 5%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 1.5em; 
+  font-family: 'Nunito Sans', sans-serif;
+  color:black;
+  text-justify: inter-word;
+  /* text-align: center; */
+  display: block;
+  margin-block-start: 1em;
+  margin-inline-end: 1em;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+.class-main-margin{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+form {
+	display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* margin: 3%; */
+}
+
+textarea {
+  display:flex;
+  justify-content: space-between;
+  width: auto;
+  flex-wrap: wrap;
+  /* resize: none; */
+  margin-top: 5%;
+  background-color: white;
+}
+
+#submit {
+  /* display: inline-block; */
+  width: 10%;
+}
+
+.div-dropdown{
+  margin-top: 6%;
+  width: auto;
+  height: 40%;
+  /* position:absolute; */
+  /* top:100%; */
+}
+#dropdown-encode-decode{
+  
+  width:200px;
+}
+#dropdown-string-utilities{
+  margin-top: 0;
+  width:200px;
+}
+.btn-position{
+  margin-top: 4%;
+  width: auto;
+  height: 30%;
+}
+.rgb-text{
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 30%;
+  
+}
+.rgb-text2{
+  /* margin-top: 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 30%;
+}
+.box {
+  border: solid;
+  height: 60%;
+  width: 100%;
+  margin: auto;    
+}
+.fromInput ,
+.toOutput{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 30%;
+ 
+}
+#input-unit-convertor , #output-unit-convertor{
+  width:100%;
+}
+#inputUnit ,#outputUnit{
+  margin-bottom: 10%;
+}
+.epoc-input-output{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 3%;
+  
+  
+}
+.section-epoc-to-human {
+  text-align: center;
+  margin-top: 5%;
+  background-color: #89CFF0;
+  margin-bottom: 4%;
+}
+#input-epoc , #output-epoc {
+  height: 1rem;
+}
+.div-input-output-epoc{
+  width:auto;
+}
+.human-input , .human-output{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 3%;
+  width:auto
+}
+
+.section-human-to-epoc{
+  text-align: center;
+  background-color: #89CFF0;
+}
+.container-sw-cl{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  justify-content: space-evenly;
+}
+.stopwatch-container {
+  
+  text-align: center;
+  background-color:#89CFF0;
+}
+.timer-container{
+  text-align: center;
+  background-color: #89CFF0;
+}
+.ip-finder-container{
+  text-align: center;
+  background-color: #89CFF0;
+}
+.div-ip-address{
+  text-align: center;
+  margin-top: 10%;
+  width: auto;
+  background-color:white ;
+}
+#timer_start_btn{
+  margin-top: 10%;
+  background: green;
+}
+.stopwatch-btns-container{
+  margin-top: 10%;
+  
+}
+#start_btn {
+  background: green;
+}
+#pause_btn {
+  background: rgb(0, 132, 255);
+  display: none;
+}
+#reset_btn {
+  background: red;
+  display: none;
+}
+#staticTime{
+  margin-top: 10%;
+  
+}
+.div-timer-value{
+  text-align: center;
+  margin-top: 10%;
+  width: 50%;
+  margin-left: 25%;
+  background-color:white ;
+}
+label{
+  font-size: 1.2em; 
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+}
+  /* Desktop menu */
+  @media all and (min-width: 800px) {
+    .menu {
+      display:flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      background: none;
+    }
+    .below-navbar {
+      background-color: #d6ffff;
+      background-image: url(/images/convertor.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .div-tagline{
+      margin-top: 5%;
+      text-align: center;
+      font-size: 3rem;
+      font-style: italic;
+      color: blue;
+    }
+  
+    .item {
+      order: 1;
+      position: relative;
+      display: block;
+      width: auto;
+    }
+  
+    .submenu-active .submenu {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: relative;
+      color:black;
+      /* top: 68px */
+      background:lightskyblue;
+      transition: top .3s;
+    }
+  
+    .toggle {
+      display: none;
+    }
+  
+    .submenu-active {
+      border-radius: 0;
+    }
+  }
+  
+  .main-page-content {
+    font-size: 24px;
+  
+    /* margin: 40px; */
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h1,
+  h2,h3 {
+    /* margin-top: 10px; */
+    text-align: center;
+  }
+  
+  .p {
+    text-align: center;
+    display: block;
+    margin-block-start: 1em;
+    margin-inline-end: 1em;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    font-size: 2em;
+  }
+  
+  .input-output-group {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.page-heading{
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: justify;
+  font-size: 3em ;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.page-summary{
+  margin-top: 5%;
+  /* width:80%; */
+  margin-left: 5%;
+  margin-right: 5%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 1.5em; 
+  font-family: 'Nunito Sans', sans-serif;
+  color:black;
+  text-justify: inter-word;
+  /* text-align: center; */
+  display: block;
+  margin-block-start: 1em;
+  margin-inline-end: 1em;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+}
+.class-main-margin{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+form {
+	display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* margin: 3%; */
+}
+
+textarea {
+  display:flex;
+  justify-content: space-between;
+  width: auto;
+  flex-wrap: wrap;
+  /* resize: none; */
+  margin-top: 5%;
+  background-color: white;
+}
+
+#submit {
+  /* display: inline-block; */
+  width: 10%;
+}
+
+.div-dropdown{
+  margin-top: 6%;
+  width: auto;
+  height: 40%;
+  /* position:absolute; */
+  /* top:100%; */
+}
+#dropdown-encode-decode{
+  
+  width:200px;
+}
+#dropdown-string-utilities{
+  margin-top: 0;
+  width:200px;
+}
+.btn-position{
+  margin-top: 4%;
+  width: auto;
+  height: 30%;
+}
+.rgb-text{
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 30%;
+}
+.rgb-text2{
+  /* margin-top: 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 30%;
+}
+.box {
+  border: solid;
+  height: 60%;
+  width: 100%;
+  margin: auto;    
+}
+.fromInput ,
+.toOutput{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 30%;
+ 
+}
+#input-unit-convertor , #output-unit-convertor{
+  width:100%;
+}
+#inputUnit ,#outputUnit{
+  margin-bottom: 10%;
+}
+.epoc-input-output{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 3%;
+  
+}
+.section-epoc-to-human {
+  text-align: center;
+  margin-top: 5%;
+  background-color: #89CFF0;
+  margin-bottom: 4%;
+}
+#input-epoc , #output-epoc {
+  height: 1rem;
+}
+.div-input-output-epoc{
+  width:auto;
+}
+.human-input , .human-output{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 3%;
+  width:auto
+}
+
+.section-human-to-epoc{
+  text-align: center;
+  background-color: #89CFF0;
+}
+.container-sw-cl{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  justify-content: space-evenly;
+}
+.stopwatch-container {
+  
+  text-align: center;
+  background-color:#89CFF0;
+}
+.timer-container{
+  text-align: center;
+  background-color: #89CFF0;
+}
+.ip-finder-container{
+  text-align: center;
+  background-color: #89CFF0;
+}
+.div-ip-address{
+  text-align: center;
+  margin-top: 10%;
+  width: auto;
+  background-color:white ;
+}
+#timer_start_btn{
+  margin-top: 10%;
+  background: green;
+}
+.stopwatch-btns-container{
+  margin-top: 10%;
+  
+}
+#start_btn {
+  background: green;
+}
+#pause_btn {
+  background: rgb(0, 132, 255);
+  display: none;
+}
+#reset_btn {
+  background: red;
+  display: none;
+}
+#staticTime{
+  margin-top: 10%;
+  
+}
+.div-timer-value{
+  text-align: center;
+  margin-top: 10%;
+  width: 50%;
+  margin-left: 25%;
+  background-color:white ;
+}
+label{
+  font-size: 1.2em; 
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+}
