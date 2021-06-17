@@ -18,7 +18,7 @@
     <nav>
         <ul class="menu">
             <img src="../../images/icons8-calculator-96.png">
-            <li class="logo"><a href="../../index.html"><h2>Utility Apps</h2></a></li>
+            <li class="logo"><a href="../../index.html"><div class="div-utility-app">Utility&nbspApps&nbsp&nbsp&nbsp</div></a></li>
             <li class="item has-submenu">
                 <a tabindex="0">Encoder-Decoder</a>
                 <ul class="submenu">
@@ -72,11 +72,10 @@
                 <input type="text" id="inputUnit" placeholder="From">
                 <div class="unit-dropdown">
                         <select id="input-unit-convertor" name="unit-convertor">
-                            <option value="select" id="select--">Select --</option>
-                            <option value="input-binary" id="input-binary">Binary</option>
-                            <option value="input-decimal" id="input-decimal">Decimal</option>
-                            <option value="input-hex" id="input-hex">Hexa-Decimal</option>
-                            <option value="input-octal" id="input-rankine">Octal</option>
+                            <option value="binary" id="input-binary" selected>Binary</option>
+                            <option value="decimal" id="input-decimal">Decimal</option>
+                            <option value="hex" id="input-hex">Hexa-Decimal</option>
+                            <option value="octal" id="input-rankine">Octal</option>
                         </select>
                 </div>
             </div> <!--End of from input-->
@@ -85,11 +84,10 @@
                 <input type="text" id="outputUnit" placeholder="To" readonly="readonly">
                 <div class="unit-dropdown">
                         <select id="output-unit-convertor" name="unit-convertor">
-                            <option value="select" id="select--">Select --</option>
-                            <option value="output-binary" id="output-binary">Binary</option>
-                            <option value="output-decimal" id="output-decimal">Decimal</option>
-                            <option value="output-hex" id="output-hex">Hexa-Decimal</option>
-                            <option value="output-octal" id="output-octal">Octal</option>
+                            <option value="binary" id="output-binary">Binary</option>
+                            <option value="decimal" id="output-decimal" selected>Decimal</option>
+                            <option value="hex" id="output-hex">Hexa-Decimal</option>
+                            <option value="octal" id="output-octal">Octal</option>
                         </select>
                 </div>
             </div> <!--End of from input-->

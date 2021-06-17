@@ -1,82 +1,69 @@
+/* eslint-disable no-alert */
+/* eslint-disable no-restricted-globals */
 window.onload = () => {
-   
-    const inputDropDown = document.querySelector("#input-unit-convertor")
-    const ouputDropDown = document.querySelector("#output-unit-convertor")
+    const inputDropDown = document.querySelector('#input-unit-convertor');
+    const ouputDropDown = document.querySelector('#output-unit-convertor');
 
     const textInput = document.querySelector('#inputUnit');
     const textOutput = document.querySelector('#outputUnit');
 
-    textInput.addEventListener("change",event=>{
-
-        const inputDropDownValue = inputDropDown.options[inputDropDown.selectedIndex].value;
+    textInput.addEventListener('change', () => {
+        // const inputDropDownValue = inputDropDown.options[inputDropDown.selectedIndex].value;
         const outputDropDownValue = ouputDropDown.options[ouputDropDown.selectedIndex].value;
 
-        textInput.value = textInput.value +"";
-        if((textInput.value.trim()==="")||(isNaN(textInput.value))) window.alert("You have entered not a number");
+        textInput.value += '';
+        // eslint-disable-next-line no-restricted-globals
+        // eslint-disable-next-line no-alert
+        if (textInput.value.trim() === '') {
+            window.alert('Please enter valid number');
+            if (outputDropDownValue !== '') textOutput.value = 'Please enter valid number';
+        } else window.alert('Please select any unit again');
+    });
 
-        else if((textInput.value.trim()!=="")&&(inputDropDownValue !=='select')&&(outputDropDownValue !=='select')) window.alert("Please select any unit again");
-        
-     });
+    const conversionMultiplier = {
+        'input-meter': {
+            'output-decimeter': 10,
+            'output-centimeter': 100,
+            'output-meter': 1,
+            'output-kilometer': 0.001,
+        },
+        'input-kilometer': {
+            'output-decimeter': 10000,
+            'output-centimeter': 100000,
+            'output-meter': 1000,
+            'output-kilometer': 1,
+        },
+        'input-decimeter': {
+            'output-decimeter': 1,
+            'output-centimeter': 10,
+            'output-meter': 0.1,
+            'output-kilometer': 0.0001,
+        },
+        'input-centimeter': {
+            'output-decimeter': 0.1,
+            'output-centimeter': 1,
+            'output-meter': 0.01,
+            'output-kilometer': 0.00001,
+        },
+    };
 
-    function eventDone(inputDropDownValue,outputDropDownValue){
-        //TODO: Enhancement in DataStructure
+    function eventDone(inputDropDownValue, outputDropDownValue) {
+        if (textInput.value.trim() !== '') {
+            // if (inputDropDownValue === 'select' || outputDropDownValue === 'select') textOutput.value = ' ';
 
-        if(textInput.value.trim()!==""){
-
-            if((inputDropDownValue ==='select')||(outputDropDownValue ==='select')) textOutput.value = " ";
-            
-            //m to dm,cm,m,km conversions
-            if((inputDropDownValue ==='input-meter')&&(outputDropDownValue ==='output-decimeter'))  textOutput.value = textInput.value*10;
-                   
-            if((inputDropDownValue ==='input-meter')&&(outputDropDownValue ==='output-centimeter')) textOutput.value = textInput.value*100;
-                
-            if((inputDropDownValue ==='input-meter')&&(outputDropDownValue ==='output-meter')) textOutput.value = textInput.value*1;
-            
-            if((inputDropDownValue ==='input-meter')&&(outputDropDownValue ==='output-kilometer')) textOutput.value = textInput.value/1000;
-
-            //Km to m,cm,dm conversions
-            if((inputDropDownValue ==='input-kilometer')&&(outputDropDownValue ==='output-decimeter'))  textOutput.value = textInput.value*10000;
-
-            if((inputDropDownValue ==='input-kilometer')&&(outputDropDownValue ==='output-centimeter')) textOutput.value = textInput.value*100000;
-
-            if((inputDropDownValue ==='input-kilometer')&&(outputDropDownValue ==='output-meter')) textOutput.value = textInput.value*1000;
-
-            if((inputDropDownValue ==='input-kilometer')&&(outputDropDownValue ==='output-kilometer')) textOutput.value = textInput.value/1;
-
-            //dm to m,cm,Km conversions
-            if((inputDropDownValue ==='input-decimeter')&&(outputDropDownValue ==='output-decimeter'))  textOutput.value = textInput.value*1;
-
-            if((inputDropDownValue ==='input-decimeter')&&(outputDropDownValue ==='output-centimeter')) textOutput.value = textInput.value*10;
-
-            if((inputDropDownValue ==='input-decimeter')&&(outputDropDownValue ==='output-meter')) textOutput.value = textInput.value/10;
-
-            if((inputDropDownValue ==='input-decimeter')&&(outputDropDownValue ==='output-kilometer')) textOutput.value = textInput.value/10000;
-
-            //cm to m,dm,Km conversions
-            if((inputDropDownValue ==='input-centimeter')&&(outputDropDownValue ==='output-decimeter'))  textOutput.value = textInput.value/10;
-
-            if((inputDropDownValue ==='input-centimeter')&&(outputDropDownValue ==='output-centimeter')) textOutput.value = textInput.value*1;
-
-            if((inputDropDownValue ==='input-centimeter')&&(outputDropDownValue ==='output-meter')) textOutput.value = textInput.value/100;
-
-            if((inputDropDownValue ==='input-centimeter')&&(outputDropDownValue ==='output-kilometer')) textOutput.value = textInput.value/100000;   
-            
+            textOutput.value = textInput.value * conversionMultiplier[inputDropDownValue][outputDropDownValue];
         }
-
     }
 
-    inputDropDown.addEventListener("change", event =>{
+    inputDropDown.addEventListener('change', () => {
         const inputDropDownValue = inputDropDown.options[inputDropDown.selectedIndex].value;
         const outputDropDownValue = ouputDropDown.options[ouputDropDown.selectedIndex].value;
-        eventDone(inputDropDownValue,outputDropDownValue)
-        
+        eventDone(inputDropDownValue, outputDropDownValue);
     });
 
-    
-    ouputDropDown.addEventListener("change", event =>{
+    ouputDropDown.addEventListener('change', () => {
         const inputDropDownValue = inputDropDown.options[inputDropDown.selectedIndex].value;
         const outputDropDownValue = ouputDropDown.options[ouputDropDown.selectedIndex].value;
-        eventDone(inputDropDownValue,outputDropDownValue)
-        
+        eventDone(inputDropDownValue, outputDropDownValue);
     });
-}
+};

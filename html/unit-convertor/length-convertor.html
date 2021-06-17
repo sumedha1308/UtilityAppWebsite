@@ -18,7 +18,7 @@
     <nav>
         <ul class="menu">
             <img src="../../images/icons8-calculator-96.png">
-            <li class="logo"><a href="../../index.html"><h2>Utility Apps</h2></a></li>
+            <li class="logo"><a href="../../index.html"><div class="div-utility-app">Utility&nbspApps&nbsp&nbsp&nbsp</div></a></li>
             <li class="item has-submenu">
                 <a tabindex="0">Encoder-Decoder</a>
                 <ul class="submenu">
@@ -69,11 +69,10 @@
         <form>
            <div class="fromInput">
                 <label for="from">From: </label>
-                <input type="text" id="inputUnit" placeholder="From">
+                <input type="number" id="inputUnit" placeholder="From">
                 <div class="unit-dropdown">
                         <select id="input-unit-convertor" name="unit-convertor">
-                            <option value="select" id="select--">Select --</option>
-                            <option value="input-meter" id="input-meter">Meter</option>
+                            <option value="input-meter" id="input-meter" selected>Meter</option>
                             <option value="input-kilometer" id="input-kilometer">Kilometer</option>
                             <option value="input-decimeter" id="input-decimeter">Decimeter</option>
                             <option value="input-centimeter" id="input-centimeter">Centimeter</option>
@@ -85,9 +84,8 @@
                 <input type="text" id="outputUnit" placeholder="To" readonly="readonly">
                 <div class="unit-dropdown">
                         <select id="output-unit-convertor" name="unit-convertor">
-                            <option value="select" id="select--">Select --</option>
                             <option value="output-meter" id="output-meter">Meter</option>
-                            <option value="output-kilometer" id="output-kilometer">Kilometer</option>
+                            <option value="output-kilometer" id="output-kilometer" selected>Kilometer</option>
                             <option value="output-decimeter" id="output-decimeter">Decimeter</option>
                             <option value="output-centimeter" id="output-centimeter">Centimeter</option>
                         </select>

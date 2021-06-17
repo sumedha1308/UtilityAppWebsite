@@ -18,7 +18,7 @@
     <nav>
         <ul class="menu">
             <img src="../../images/icons8-calculator-96.png">
-            <li class="logo"><a href="../../index.html"><h2>Utility Apps</h2></a></li>
+            <li class="logo"><a href="../../index.html"><div class="div-utility-app">Utility&nbspApps&nbsp&nbsp&nbsp</div></a></li>
             <li class="item has-submenu">
                 <a tabindex="0">Encoder-Decoder</a>
                 <ul class="submenu">
@@ -69,11 +69,10 @@
         <form>
            <div class="fromInput">
                 <label for="from">From: </label>
-                <input type="text" id="inputUnit" placeholder="From">
+                <input type="number" id="inputUnit" placeholder="From">
                 <div class="unit-dropdown">
                         <select id="input-unit-convertor" name="unit-convertor">
-                            <option value="select" id="select--">Select --</option>
-                            <option value="input-kelvin" id="input-kelvin">Kelvin [K]</option>
+                            <option value="input-kelvin" id="input-kelvin" selected>Kelvin [K]</option>
                             <option value="input-celsius" id="input-celsius">Celsius [°C]</option>
                             <option value="input-fahrenheit" id="input-fahrenheit">Fahrenheit [°F]</option>
                             <option value="input-rankine" id="input-rankine">Rankine [°R]</option>
@@ -85,9 +84,8 @@
                 <input type="text" id="outputUnit" placeholder="To" readonly="readonly">
                 <div class="unit-dropdown">
                         <select id="output-unit-convertor" name="unit-convertor">
-                            <option value="select" id="select--">Select --</option>
                             <option value="output-kelvin" id="output-kelvin">Kelvin [K]</option>
-                            <option value="output-celsius" id="output-celsius">Celsius [°C]</option>
+                            <option value="output-celsius" id="output-celsius" selected>Celsius [°C]</option>
                             <option value="output-fahrenheit" id="output-fahrenheit">Fahrenheit [°F]</option>
                             <option value="output-rankine" id="output-rankine">Rankine [°R]</option>
                         </select>

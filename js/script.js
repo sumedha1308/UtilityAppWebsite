@@ -32,6 +32,7 @@ function eventCloseSubmenu(e) {
 }
 
 inputToggle.addEventListener('click', toggleMobileMenu);
+// eslint-disable-next-line no-restricted-syntax
 for (const item of items) {
     if (item.querySelector('.submenu')) {
         item.addEventListener('click', eventSubmenuItem);
