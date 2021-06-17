@@ -250,6 +250,8 @@ textarea {
     margin-top: 5%;
     background-color: #5eacfa;
     margin-bottom: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 #input-epoc,
 #output-epoc {
@@ -271,6 +273,8 @@ textarea {
 .section-human-to-epoc {
     text-align: center;
     background-color: #5eacfa;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .container-sw-cl {
     display: flex;
@@ -537,6 +541,8 @@ textarea {
     margin-top: 5%;
     background-color: #5eacfa;
     margin-bottom: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 #input-epoc,
 #output-epoc {
@@ -558,6 +564,8 @@ textarea {
 .section-human-to-epoc {
     text-align: center;
     background-color: #5eacfa;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .container-sw-cl {
     display: flex;
