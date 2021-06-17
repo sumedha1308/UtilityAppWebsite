@@ -17,7 +17,7 @@
 <body>
     <nav>
         <ul class="menu">
-            <img src="../../images/icons8-calculator-96.png">
+            <a href="../../index.html"><img src="../../images/icons8-calculator-96.png"></a>
             <li class="logo"><a href="../../index.html"><div class="div-utility-app">Utility&nbspApps&nbsp&nbsp&nbsp</div></a></li>
             <li class="item has-submenu">
                 <a tabindex="0">Encoder-Decoder</a>
@@ -62,14 +62,14 @@
         </div>
         <form>
             <div class="rgb-text2">
-                <textarea cols="15" rows="1" placeholder="Please enter Hex Value" id="input-hex"></textarea>
+                <input type="number" class="form-input" placeholder="Please enter Hex Value" id="input-hex" min=0 max=255>
                 <div class="box" id="box"></div>
             </div>
             <div class="btn-position"><input type="button" id="btn-convertor" value="HEX-TO-RGB Convertor"></div>
             <div class="rgb-text">
-                <textarea cols="15" rows="1" placeholder="Red color value" id="output-red" readonly="readonly"></textarea>
-                <textarea cols="15" rows="1" placeholder="Green color value" id="output-green" readonly="readonly"></textarea>
-                <textarea cols="15" rows="1" placeholder="Blue color value" id="output-blue" readonly="readonly"></textarea>
+                <input type="number" class="form-input" placeholder="Red color value" id="output-red" readonly="readonly" min=0 max=255>
+                <input type="number" class="form-input" placeholder="Green color value" id="output-green" readonly="readonly" min=0 max=255>
+                <input type="number" class="form-input" placeholder="Blue color value" id="output-blue" readonly="readonly" min=0 max=255>
             </div>
         </form>
     </div><!--End of below nav bar-->

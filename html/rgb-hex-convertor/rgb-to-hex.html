@@ -17,7 +17,7 @@
 <body>
     <nav>
         <ul class="menu">
-            <img src="../../images/icons8-calculator-96.png">
+            <a href="../../index.html"><img src="../../images/icons8-calculator-96.png"></a>
             <li class="logo"><a href="../../index.html"><div class="div-utility-app">Utility&nbspApps&nbsp&nbsp&nbsp</div></a></li>
             <li class="item has-submenu">
                 <a tabindex="0">Encoder-Decoder</a>
@@ -62,13 +62,17 @@
         </div>
         <form>
             <div class="rgb-text">
-                <textarea cols="15" rows="1" placeholder="Please enter Red color value" id="input-red"></textarea>
+                <input type="number" class="form-input" placeholder="Please enter Red color value" id="input-red" min=0 max=255>
+                <input type="number" class="form-input" placeholder="Please enter Green color value" id="input-green" min=0 max=255>
+                <input type="number" class="form-input" placeholder="Please enter Blue color value" id="input-blue" min=0 max=255>
+                <!-- <textarea cols="15" rows="1" placeholder="Please enter Red color value" id="input-red"></textarea>
                 <textarea cols="15" rows="1" placeholder="Please enter Green color value" id="input-green"></textarea>
-                <textarea cols="15" rows="1" placeholder="Please enter Blue color value" id="input-blue"></textarea>
+                <textarea cols="15" rows="1" placeholder="Please enter Blue color value" id="input-blue"></textarea> -->
             </div>
             <div class="btn-position"><input type="button" id="btn-convertor" value="RGB-TO-Hex Convertor"></div>
             <div class="rgb-text2">
-                    <textarea cols="15" rows="1" placeholder="Result Hex value" id="output-hex" readonly="readonly"></textarea>
+                    <!-- <textarea cols="15" rows="1" placeholder="Result Hex value" id="output-hex" readonly="readonly"></textarea> -->
+                    <input type="text" class="form-input" placeholder="Result Hex value" id="output-hex" readonly="readonly" min=0 max=255>
                     <div class="box" id="box"></div>
             </div> 
           </form>
