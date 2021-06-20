@@ -1,4 +1,4 @@
-# [UtilityAppWebsite](https://sumedha-utility-app-website.netlify.app/index.html)
+# [Utility Apps](https://sumedha-utility-app-website.netlify.app/index.html)
 This project is developed to make conversions easy for users.
 Technologies used in project : Html5, css, js , Netlify
 Code follows airbnb eslint guidelines and standard stylelint guidelines.
