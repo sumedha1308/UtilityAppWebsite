@@ -17,7 +17,7 @@
 <body>
     <nav>
         <ul class="menu">
-            <a href="../../index.html"><img src="../../images/icons8-calculator-96.png"></a>
+            <a href="../../index.html"><img src="../../images/cal6.png" class="logo-padding"></a>
             <li class="logo"><a href="../../index.html"><div class="div-utility-app">Utility&nbspApps&nbsp&nbsp&nbsp</div></a></li>
             <li class="item has-submenu">
                 <a tabindex="0">Encoder-Decoder</a>
@@ -68,12 +68,12 @@
                 <div class="epoc-input-output">
                     <div class="div-input-output-epoc">
                         <label for="input-epoc">Enter Epoc Time</label>
-                        <input type="number" id="input-epoc" placeholder="Please Enter Epoc time" />
+                        <input type="number" id="input-epoc"  />
                     </div>
-                    <div class="epoc-btn-position"><input type="button" id="epoc-btn" value="Epoc-To-HumanDate"></div>
+                    <div class="epoc-btn-position"><input type="button" class="btn-pointer" id="epoc-btn" value="Epoc-To-HumanDate"></div>
                     <div class="div-input-output-epoc">
                         <label for="output-humanDate">HumanDate Time</label>
-                        <input type="text" id="output-human-time" placeholder="Date in Human readable format" readonly="readonly"/>
+                        <input type="text" id="output-human-time" readonly="readonly"/>
                     </div>
                 </div>
             </section>
@@ -83,35 +83,35 @@
                     <div class="human-input"> <!--Should be inline -->
                         <div class="div-human-input">
                             <label for="input-human-year">Year</label>
-                            <input type="number" id="input-human-year" placeholder="Year" />
+                            <input type="number" id="input-human-year" min="1970" />
                         </div>
                         <div class="div-human-input">
                             <label for="input-human-month">Month</label>
-                            <input type="number" id="input-human-month" placeholder="Month" min="1" max="12"/>
+                            <input type="number" class="text-padding" id="input-human-month" min="1" max="12" />
                         </div>
                         <div class="div-human-input">
                             <label for="input-human-day">Day</label>
-                            <input type="number" id="input-human-day" placeholder="Day" min="1" max="31"/>
+                            <input type="number" class="text-padding" id="input-human-day" min="1" max="31"  />
                         </div>
                         <div class="div-human-input">
                             <label for="input-human-hour">Hour</label>
-                            <input type="number" id="input-human-hour" placeholder="Hour" min="0" max="24" />
+                            <input type="number" class="text-padding" id="input-human-hour" min="0" max="24" />
                         </div>
                         <div class="div-human-input">
                             <label for="input-human-minute">Minutes</label>
-                            <input type="number" id="input-human-minute" placeholder="Day" min="0" max="59" />
+                            <input type="number" class="text-padding" id="input-human-minute" min="0" max="59" />
                         </div>
                         <div class="div-human-input">
                             <label for="input-human-sec">Sec</label>
-                            <input type="number" id="input-human-sec" placeholder="Seconds" min="0" max="59" />
+                            <input type="number" class="text-padding" id="input-human-sec" min="0" max="59" />
                         </div>
-                        <div class="epoc-btn-position"><input type="button" id="human-btn" value="HumanDate-To-Epoc"></div>
+                        <div class="epoc-btn-position"><input type="button" class="btn-pointer" id="human-btn" value="HumanDate-To-Epoc"></div>
                     </div><!--End of human input-->
                     <div class="human-output">
                         
                         <div class="div-human-output">
                             <label for="output-humanDate">Epoc TimeStamp</label>
-                            <input type="text" id="output-epoc-time" placeholder="Epoc timestamp" readonly="readonly"/>
+                            <input type="text" class="text-padding" id="output-epoc-time" placeholder="Epoc timestamp" readonly="readonly"/>
                         </div>
                     </div>
                 </div>

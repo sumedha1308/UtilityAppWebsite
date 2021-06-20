@@ -50,7 +50,7 @@ a {
 }
 
 .item {
-    padding: 10px;
+    padding: 5px;
 }
 
 .item a:hover {
@@ -72,7 +72,7 @@ a {
 }
 
 .menu li.subitem a {
-    padding: 10px;
+    padding: 5px;
 }
 
 .toggle {
@@ -97,7 +97,7 @@ a {
 
 .submenu-active .submenu {
     display: block;
-    background: #5eacfa;
+    background: #b2c162;
 }
 
 .has-submenu i {
@@ -336,6 +336,12 @@ label {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
 }
+.text-padding {
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-bottom: 10px;
+}
+
 /* Desktop menu */
 @media all and (min-width: 800px) {
     .menu {
@@ -344,6 +350,9 @@ label {
         align-items: flex-start;
         flex-wrap: nowrap;
         background: none;
+    }
+    .logo-padding {
+        margin-top: 10%;
     }
     .div-utility-app {
         font-size: 2rem;
@@ -378,7 +387,7 @@ label {
         top: relative;
         color: black;
         cursor: pointer;
-        background: #5eacfa;
+        background: #b2c162;
         transition: top 0.3s;
     }
 
@@ -547,7 +556,7 @@ textarea {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    padding: 3%;
+    /* padding: 6%; */
 }
 .section-epoc-to-human {
     text-align: center;
@@ -637,4 +646,9 @@ label {
     font-size: 1.2em;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
+}
+.text-padding {
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-bottom: 10px;
 }
