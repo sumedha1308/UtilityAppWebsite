@@ -1,6 +1,6 @@
 # [UtilityAppWebsite](https://sumedha-utility-app-website.netlify.app/index.html)
-This project is developed to make conversions easy.
-Technology used in project : Html5, css, js , Netlify
+This project is developed to make conversions easy for users.
+Technologies used in project : Html5, css, js , Netlify
 Code follows airbnb eslint guidelines and standard stylelint guidelines.
 Below Utilities are added in this project:
   1)Encoders/Decoders
