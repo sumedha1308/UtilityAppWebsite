@@ -10,18 +10,18 @@ Below Utilities are added in this project:<br>
 
   1)Encoders/Decoders<br>
      &nbsp;i)URL Encoder-Decoder<br>
-     &nbsp; ii)Base64 Encoder-Decoder<br>
+     &nbsp;ii)Base64 Encoder-Decoder<br>
      &nbsp;iii)Hash Generator<br>
          &nbsp;&nbsp; a)MD5 Hash Generator<br>
-          &nbsp;&nbsp;b)SHA-1 Hash Generator<br>
+         &nbsp;&nbsp;b)SHA-1 Hash Generator<br>
          &nbsp;&nbsp; c)SHA-256 Hash Generator<br>
          &nbsp;&nbsp; d)SHA-512 Hash Generator<br><br>
   2)RGB/HEX Converter<br>
      &nbsp; i)RGB to Hex colour Conversion<br>
-      &nbsp;ii)HEX to RGB colour Conversion<br><br>
+     &nbsp;ii)HEX to RGB colour Conversion<br><br>
   3)Time Convertor<br>
      &nbsp; i) Epoc time to Human readable time format and vice versa.<br>
-      &nbsp;ii)Utilities like Timer, Stopwatch , IP finder are also added.<br><br>
+     &nbsp;ii)Utilities like Timer, Stopwatch , IP finder are also added.<br><br>
   4)Unit Convertores<br>
      &nbsp; i)Length Convertor<br>
      &nbsp; ii)Temperature Convertor<br>
