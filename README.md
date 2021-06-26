@@ -13,7 +13,7 @@ Below Utilities are added in this project:<br>
      &nbsp;ii)Base64 Encoder-Decoder<br>
      &nbsp;iii)Hash Generator<br>
          &nbsp;&nbsp; a)MD5 Hash Generator<br>
-         &nbsp;&nbsp;b)SHA-1 Hash Generator<br>
+         &nbsp;&nbsp; b)SHA-1 Hash Generator<br>
          &nbsp;&nbsp; c)SHA-256 Hash Generator<br>
          &nbsp;&nbsp; d)SHA-512 Hash Generator<br><br>
   2)RGB/HEX Converter<br>
@@ -26,8 +26,8 @@ Below Utilities are added in this project:<br>
      &nbsp; i)Length Convertor<br>
      &nbsp; ii)Temperature Convertor<br>
      &nbsp; iii)Language Convertors<br><br>
- 5)Number Based Convertors<br>
- 6)String Utilities<br><br>
+ 5)Number Based Convertors<br><br>
+ 6)String Utilities<br>
      &nbsp; i)Lower case<br>
      &nbsp; ii)Upper Case<br>
      &nbsp; iii)Split String<br>
