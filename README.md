@@ -18,14 +18,14 @@ Below Utilities are added in this project:<br>
           d)SHA-512 Hash Generator<br><br>
   2)RGB/HEX Converter<br>
       i)RGB to Hex colour Conversion<br>
-      ii)HEX to RGB colour Conversion<br>
-  3)Time Convertor<br><br>
+      ii)HEX to RGB colour Conversion<br><br>
+  3)Time Convertor<br>
       i) Epoc time to Human readable time format and vice versa.<br>
-      ii)Utilities like Timer, Stopwatch , IP finder are also added.<br>
-  4)Unit Convertores<br><br>
+      ii)Utilities like Timer, Stopwatch , IP finder are also added.<br><br>
+  4)Unit Convertores<br>
       i)Length Convertor<br>
       ii)Temperature Convertor<br>
-      iii)Language Convertors<br>
+      iii)Language Convertors<br><br>
  5)Number Based Convertors<br>
  6)String Utilities<br><br>
       i)Lower case<br>
