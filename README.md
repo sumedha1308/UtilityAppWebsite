@@ -40,17 +40,17 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-![image](https://github.com/sumedha1308/UtilityAppWebsite/blob/master/images/Screenshots/HomePage.png)
-
-### Hamburger Menu for maximum screen size is 800 px.
-
-![image](https://github.com/sumedha1308/UtilityAppWebsite/blob/master/images/Screenshots/Hamburger.PNG)
-
 There are many great Utility Applications websites available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. 
 
 Here's why:
 * Utility Apps serve the day-to-day needs of convertors.
 * Users can find multiple converters, String Utilities, Translators, Timer, IP finder handily available at one place.
+
+![image](https://github.com/sumedha1308/UtilityAppWebsite/blob/master/images/Screenshots/HomePage.png)
+
+### Hamburger Menu to make website responsive on small screen size.
+
+![image](https://github.com/sumedha1308/UtilityAppWebsite/blob/master/images/Screenshots/Hamburger.PNG)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
