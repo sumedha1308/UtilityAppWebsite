@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-# [Utility Apps](https://sumedha-utility-app-website.netlify.app/index.html)<br>
+# [Utility Apps](https://sumedha-utility-app-website.netlify.app/)<br>
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
