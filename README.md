@@ -159,7 +159,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Sumedha Deshpande - [Linkedin](www.linkedin.com/in/sumedha1308) - sumedhasd1308@gmail.com
+Sumedha Deshpande - [Linkedin](https://www.linkedin.com/in/sumedha1308/) - sumedhasd1308@gmail.com
 
 Project Link: [Utility Apps](https://github.com/sumedha1308/UtilityAppWebsite)
 
